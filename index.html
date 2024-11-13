@@ -108,23 +108,19 @@
     
 
     <section id="contact">
-        <div class="container">
-            <h2>CONTACT US</h2>
-            <p>If you have any questions or would like to participate in the celebrations, feel free to reach out to us!</p>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to participate in the celebrations, feel free to reach out to us!</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="button" id="sendMessageButton">Send Message</button>
+            <p id="feedbackMessage" style="display:none; color: green; margin-top: 10px;">Thank you for your feedback!</p>
+        </form>
     </section>
+    
+            
+            
 
     <footer>
         <div class="container">

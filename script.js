@@ -38,3 +38,13 @@ function showSlides(n) {
     }
     slides[slideIndex].style.display = "block";
 }
+document.getElementById("sendMessageButton").addEventListener("click", function() {
+    // Display the feedback message
+    var feedbackMessage = document.getElementById("feedbackMessage");
+    feedbackMessage.style.display = "block";
+    
+    // Hide the feedback message after 3 seconds
+    setTimeout(function() {
+        feedbackMessage.style.display = "none";
+    }, 3000);
+});

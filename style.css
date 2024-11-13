@@ -1,0 +1,447 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow for navbar */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex; /* Align icon and text horizontally */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s;
+}
+
+.navbar-links a i {
+    font-size: 18px; /* Icon size */
+}
+
+.navbar-links a:hover {
+    color: #f8d478;
+}
+
+/* Adjust hero section to account for fixed header */
+#hero {
+    background-image: url('dev-deepawali.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0 100px; /* Increased top padding to accommodate fixed navbar */
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Countdown timer */
+#countdown {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Gallery Section Styles */
+#gallery {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slider img {
+    width: 100%; /* Ensures images take up full width of the slider */
+    height: 400px; /* Set height to keep consistent size */
+    object-fit: cover; /* Ensures images are cropped to fit container without distortion */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover Effects for Navigation Buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Hero Section */
+#hero {
+    background-image:url('img3.jpg'); ; /* Default background color */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+#hero:hover {
+    background-image: url('img1.jpg'); /* Image to appear on hover */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Form */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #007BFF; /* Highlight color on focus */
+}
+
+#contact form textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    min-height: 150px;
+}
+
+#contact form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #444;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto; /* Center the text block */
+    color: #555;
+    padding: 0 20px; /* Add padding for readability */
+}
+
+#about p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF; /* Add a color pop for the first letter */
+}
+
+#about::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+#about::after {
+    content: "Embrace the Spirit of Lights and Joy";
+    display: block;
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+}
+/* Events Section */
+#events {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #444;
+}
+
+#events h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#events p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    padding: 0 20px;
+}
+
+#events ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#events ul li {
+    font-size: 18px;
+    color: #007BFF;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+    text-align: left; /* Left align for list items */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#events ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+    font-size: 24px;
+}
+
+#events::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+}
+
+#events::after {
+    content: "Join the Festivities and Experience the Culture";
+    display: block;
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+}
+/* Styling for the Things to Do Section */
+#things-to-do {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+#things-to-do h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#things-to-do p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #555;
+    padding: 0 20px;
+}
+
+#things-to-do h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin: 20px 0;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.activity-list li {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px 0;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-list li strong {
+    color: #007BFF;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.activity-list li:hover {
+    background-color: #f1f8ff;
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
